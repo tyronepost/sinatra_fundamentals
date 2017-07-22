@@ -3,6 +3,8 @@ GEM
   specs:
     daemons (1.2.4)
     eventmachine (1.2.3)
+    macaddr (1.7.1)
+      systemu (~> 2.6.2)
     mustermann (1.0.0)
     rack (2.0.3)
     rack-protection (2.0.0)
@@ -12,11 +14,14 @@ GEM
       rack (~> 2.0)
       rack-protection (= 2.0.0)
       tilt (~> 2.0)
+    systemu (2.6.5)
     thin (1.7.2)
       daemons (~> 1.0, >= 1.0.9)
       eventmachine (~> 1.0, >= 1.0.4)
       rack (>= 1, < 3)
     tilt (2.0.7)
+    uuid (2.3.8)
+      macaddr (~> 1.0)
 
 PLATFORMS
   ruby
@@ -24,6 +29,7 @@ PLATFORMS
 DEPENDENCIES
   sinatra
   thin
+  uuid
 
 BUNDLED WITH
    1.14.6
